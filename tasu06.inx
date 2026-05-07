@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<inkscape-extension
+xmlns="http://www.inkscape.org/namespace/inkscape/extension">
+
+<name>TASU 06 G CODE</name>
+
+<id>org.hamid.tasu06</id>
+
+<param name="directory"
+type="string"
+gui-text="Output Folder">C:\Temp</param>
+
+<param name="filename"
+type="string"
+gui-text="File Name">output.gcode</param>
+
+<param name="tool_power_command"
+type="string"
+gui-text="Punch ON Command">M8</param>
+
+<param name="tool_off_command"
+type="string"
+gui-text="Punch OFF Command">M9</param>
+
+<param name="dwell_time"
+type="float"
+gui-text="Punch Delay">0.5</param>
+
+<param name="start_position"
+type="optiongroup"
+appearance="combo"
+gui-text="G-code Start Position">
+<option value="left_bottom">Left Bottom</option>
+<option value="left_top">Left Top</option>
+</param>
+
+<param name="zig_zag_sort"
+type="bool"
+gui-text="Optimize Zig Zag Movement">false</param>
+
+<effect>
+
+<object-type>all</object-type>
+
+</effect>
+
+<script>
+
+<command
+location="inx"
+interpreter="python">tasu06.py</command>
+
+</script>
+
+</inkscape-extension>
