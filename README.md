@@ -1,8 +1,14 @@
 # TASU 06 G CODE
 
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+
+Copyright (C) 2026 Hamid Khatri
+
+This project is licensed under the GNU General Public License v3. See LICENSE for details.
+
 TASU 06 G CODE is a simple Inkscape extension for generating punch-style G-code from selected objects in an SVG drawing.
 
-It is designed for workflows where each selected object represents one punch point. The extension reads the center point of every selected object, then creates a `.gcode` file with machine movement and punch commands.
+It is designed for workflows where each selected object represents one punch point. The extension reads the center point of every selected object, then creates a `.gcode` file with machine movement[...] 
 
 Currently tested and working on **Inkscape 1.4.2**.
 
